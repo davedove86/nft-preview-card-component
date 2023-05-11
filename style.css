@@ -1,0 +1,134 @@
+:root {
+	--bg-color: #0c1a2d;
+	--primary: #41e4e4;
+	--card-bg: #14273f;
+	--text-color: #6b819f;
+
+	--border-radius: 12px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-weight: 400;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: 'Outfit', sans-serif;
+}
+
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.card-wrapper {
+	background-color: var(--card-bg);
+	padding: 24px 24px 30px 24px;
+	border-radius: var(--border-radius);
+	-webkit-box-shadow: 0px 29px 38px 0px rgba(12, 23, 41, 0.43);
+	-moz-box-shadow: 0px 29px 38px 0px rgba(12, 23, 41, 0.43);
+	box-shadow: 0px 29px 38px 0px rgba(12, 23, 41, 0.43);
+}
+
+.main-image {
+	position: relative;
+}
+
+.main-image img {
+	max-width: 100%;
+	border-radius: var(--border-radius);
+}
+
+.middle {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius);
+	background-color: rgba(65, 228, 228, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+}
+
+.middle:hover {
+	opacity: 1;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+h1 {
+	color: white;
+	margin: 30px 0;
+}
+
+h1:hover {
+	color: var(--primary);
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.info-wrapper {
+	display: flex;
+	align-items: center;
+	margin: 30px 0;
+}
+
+.primary-text {
+	display: flex;
+	align-items: center;
+}
+
+.primary-text {
+	color: var(--primary);
+	font-weight: 600;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+.divider {
+	height: 1px;
+	background-color: #2e4159;
+	margin: 24px 0 16px 0;
+}
+
+.name-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.name-wrapper img {
+	width: 34px;
+	border: 2px solid white;
+	border-radius: 100%;
+	margin-right: 16px;
+}
+
+.name-wrapper a {
+	color: white;
+	text-decoration: none;
+}
+
+.name-wrapper a:hover {
+	color: var(--primary);
+	transition: 0.3s ease-in-out;
+}
